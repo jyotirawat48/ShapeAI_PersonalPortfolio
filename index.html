@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Jyoti Rawat Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src="self.jpg"/>
+        <div class='herosectionDetails'>
+          <h1>JYOTI RAWAT</h1>
+          <h3>Student at Shaheed Rajguru College of Applied Sciences for Women, DU</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>SOMETHING ABOUT ME!</h1>
+        <p>Hello everyone! Hope you all are safe and healthy. My name is Jyoti Rawat and I am currently pursuing BSc (Hons) Computer Science from SRCASW, DU. My hometown is Rishikesh, Uttarakhand and my hobbies are dancing, listening to music, travelling, reading books and sketching. It is a wonderful feeling as I have completed my HTML & CSS bootcamp for personal portfolio. I have also completed two more bootcamps offered by ShapeAI (Basic Web Development with JavaScript and ReactJS and Introduction to Cyber Security). ShapeAI is offering students knowledgable bootcamps free of cost and helping many students out there to enhance their learning. I am really grateful and also want to congratulate the whole team of ShapeAI for their hardwork. Apart from this, I have also completed internships as Brand Promoter at BLOOMBUZZ and as Brand Associate at The Ivory Events where I gained experience regarding social media marketing, team management, time management, leadership skills and other skills as well. Thank you.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='html.png'>
+          <img title='CSS' src='css.png'>
+          <img title='MySQL' src='mysql.png'>
+          <img title='JAVA' src='java.jpg'>
+          <img title='Python' src='python.png'>
+          <img title='C++' src='cpp.png'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects done with ShapeAI</h1>
+          <div class='projectContainer'>
+            <img src='project.jpg'/>
+            <div class='projectDescription'>
+              <h4>Basic Web Development with JavaScript and ReactJS</h4>
+              <p>Basic HTML & CSS topics were covered and designed a simple website.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='project.jpg'/>
+            <div class='projectDescription'>
+              <h4>Intro to CyberSecurity</h4>
+              <p>Basics of Python were covered and project has been done.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
